@@ -8,6 +8,17 @@ This was developed following the [Angular course by Fernando Herrera](https://ww
 ### Clone the project
   Run `git clone https://github.com/j-millan/spotiapp.git`.
 
+### Auth token
+  You have to create a Spotify developer account and use your credentials to generate an auth token every hour using postman and replace it in `src/app/services/spotify.service.ts`.
+  
+  In postman, make a post request to `https://accounts.spotify.com/api/token/` with body:
+    
+    {
+      grant_type: client_credentials,
+      client_id: your_client_id_here,
+      client_secret: your_client_secret_here
+    }
+
 ### Run the development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
