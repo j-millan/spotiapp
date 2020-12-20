@@ -1,0 +1,12 @@
+.navbar-item {
+    font-weight: 200;
+    color: hsl(0, 0%, 78%) !important;
+}
+
+.navbar-item:hover, .navbar-item:focus {
+    background-color: hsl(0, 0%, 16%);
+}
+
+.navbar-item.active { 
+    color: white !important;
+}

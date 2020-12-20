@@ -1,0 +1,22 @@
+
+<div class="columns is-mobile">
+  <div class="column">
+    <div class="field">
+      <div class="control">
+        <input
+        #query
+        type="text"
+        class="input"
+        placeholder="Search artist"
+        (keyup.enter)="search(query.value)"
+        />
+        </div>
+      </div>
+  </div>
+  <div class="column is-one-fifth-desktop is-one-third-mobile px-0">
+    <button class="button is-link is-fullwidth" type="button" (click)="search(query.value)">Search</button>
+  </div>
+</div>
+
+<app-loading *ngIf="loading"></app-loading>
+<app-cards *ngIf="!loading" [items]="artists"></app-cards>

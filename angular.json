@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bulma/css/bulma.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@vizuaalog/bulmajs/dist/bulma.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "spotiapp"
+  "defaultProject": "spotiapp",
+  "cli": {
+    "analytics": false
+  }
 }
