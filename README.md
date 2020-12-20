@@ -8,6 +8,9 @@ This was developed following the [Angular course by Fernando Herrera](https://ww
 ### Clone the project
   Run `git clone https://github.com/j-millan/spotiapp.git`.
 
+### Install the app
+  Run `npm install` in the created folder.
+
 ### Auth token
   You have to create a Spotify developer account and use your credentials to generate an auth token every hour using postman and replace it in `src/app/services/spotify.service.ts`.
   
